@@ -89,5 +89,3 @@
   elementFormUploud.addEventListener('submit', onFormUploudSubmit);
 
 })();
-
-
