@@ -1,0 +1,56 @@
+.form-uploud {
+  width: 280px;
+  margin: 30px auto;
+}
+
+.form-uploud__label-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin: 20px auto;
+  padding: 0 0;
+
+  border-bottom: 1px solid @color-main;
+  cursor: pointer;
+}
+
+.form-uploud__text {
+  display: block;
+  margin: 17px 10px;
+}
+
+.form-uploud__file:focus + .form-uploud__label-file {
+  outline: auto 3px highlight;
+}
+
+.form-uploud__label-url {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  margin: 40px auto;
+  padding: 0 0;
+}
+
+.form-uploud__url {
+  display: block;
+  width: 100%;
+  padding: 8px 4px 9px 4px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+
+  border: 1px solid @color-main;
+
+  &::placeholder {
+    color: @color-main;
+    opacity: 1;
+  }
+}
+
+.form-uploud__download {
+  margin: 0 auto;
+}

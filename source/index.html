@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>TEST</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <form class="form-uploud">
+      <input class="form-uploud__file visually-hidden" id="upload-file" type="file" accept=".json">
+      <label for="upload-file" class="form-uploud__label-file">
+        <svg class="form-uploud__file-icon" width="42" height="42">
+          <use xlink:href="#icon-load"></use>
+        </svg>
+        <span class="form-uploud__text">Загрузите файл с компьютера</span>
+      </label>
+
+      <label class="form-uploud__label-url">
+        <svg class="form-uploud__file-icon" width="31" height="30">
+          <use xlink:href="#icon-url"></use>
+        </svg>
+        <span class="form-uploud__text">Укажите URL ресурса</span>
+        <input class="form-uploud__url" type="url" placeholder="Поле ввода URL">
+      </label>
+
+      <button class="form-uploud__download btn btn--upload">Загрузить</button>
+    </form>
+
+    <section class="gallery"></section>
+
+    <template id="template-gallery-item">
+      <div class="gallery__item">
+        <img class="gallery__img" src="" width="" height="" alt="Фото">
+      </div>
+    </template>
+
+    <script src="js/backend.min.js"></script>
+    <script src="js/validation.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+  </body>
+</html>
